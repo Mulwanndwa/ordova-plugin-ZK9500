@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.ZK9500" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>cordova-plugin-ZK9500</name><js-module name="cordova-plugin-ZK9500" src="www/cordova-plugin-ZK9500.js"><clobbers target="cordova.plugins.ZkScanner" /></js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+		<feature name="cordova-plugin-ZK9500">
+		<param name="android-package" value="cordova.plugin.ZK9500.cordova-plugin-ZK9500" /></feature>
+	</config-file>
+	<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+	<source-file src="src/android/ZkScanner.java" target-dir="src/cordova/plugin/ZK9500/cordova-plugin-ZK9500" />
+	<source-file src="src/android/zkandroidfpreader.jar" target-dir="libs"/>
+	<source-file src="src/android/zkandroidcore.jar" target-dir="libs"/>
+</platform>
+</plugin>
